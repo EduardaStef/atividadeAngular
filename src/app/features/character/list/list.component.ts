@@ -7,6 +7,7 @@ import { CharactersService } from 'src/app/core/services/characters/characters.s
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.scss']
 })
+
 export class ListComponent implements OnInit {
   character: Character[] = [];
   headers: string[] = ['Id', 'Name', 'Health', 'Attack', "Defense", "Sprite", "Level", "Xp", "MaxHealth", "User", "Actions"];

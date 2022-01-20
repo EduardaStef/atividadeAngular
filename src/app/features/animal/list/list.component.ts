@@ -9,7 +9,7 @@ import { AnimalsService } from 'src/app/core/services/animals/animals.service';
 })
 export class ListComponent implements OnInit {
   animals: Animal[] = [];
-headers: string[] = ['Id', 'Specie', 'Level', 'XpWhenKilled', "Attack", "Defense", "Health", "Paceful?", "Max Health", "Sprites", "Actions"];
+  headers: string[] = ['Id', 'Specie', 'Level', 'XpWhenKilled', "Attack", "Defense", "Health", "Paceful?", "Max Health", "Sprites", "Actions"];
 
 
     constructor(private animalsService: AnimalsService) { }
