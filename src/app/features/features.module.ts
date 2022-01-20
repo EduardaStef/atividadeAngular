@@ -8,13 +8,21 @@ import { CharacterSpriteModule } from './character-sprite/character-sprite.modul
 import { DialogueModule } from './dialogue/dialogue.module';
 import { EnemyModule } from './enemy/enemy.module';
 import { NpcModule } from './npc/npc.module';
+import { UserModule } from './user/user.module';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    FeaturesRoutingModule
+    FeaturesRoutingModule,
+    AnimalModule,
+    CharacterModule,
+    CharacterSpriteModule,
+    DialogueModule,
+    EnemyModule,
+    NpcModule,
+    UserModule
   ],
   exports: [AnimalModule, CharacterModule, CharacterSpriteModule, DialogueModule, EnemyModule, NpcModule]
 })

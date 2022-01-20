@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormComponent } from './form/form.component';
 import { ListComponent } from './list/list.component';
 import { CharacterSpriteRoutingModule } from './character-sprite-routing.module';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -10,7 +12,9 @@ import { CharacterSpriteRoutingModule } from './character-sprite-routing.module'
   declarations: [FormComponent, ListComponent],
   imports: [
     CommonModule,
-    CharacterSpriteRoutingModule
+    CharacterSpriteRoutingModule,
+    ReactiveFormsModule,
+    SharedModule
   ]
 })
 export class CharacterSpriteModule { }

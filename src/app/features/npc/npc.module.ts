@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { ListComponent } from './list/list.component';
 import { FormComponent } from './form/form.component';
 import { NpcRoutingModule } from './npc-routing.module';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -10,7 +12,9 @@ import { NpcRoutingModule } from './npc-routing.module';
   declarations: [ListComponent, FormComponent],
   imports: [
     CommonModule,
-    NpcRoutingModule
+    NpcRoutingModule,
+    ReactiveFormsModule,
+    SharedModule
   ]
 })
 export class NpcModule { }

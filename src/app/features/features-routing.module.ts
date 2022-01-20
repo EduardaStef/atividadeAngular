@@ -17,7 +17,7 @@ const routes: Routes = [
     import('./character/character.module').then((m) => m.CharacterModule),
   },
   {
-    path: 'animal',
+    path: 'animals',
     canActivate: [PermissionGuard],
     loadChildren:async () =>
     import('./animal/animal.module').then((m) => m.AnimalModule),
