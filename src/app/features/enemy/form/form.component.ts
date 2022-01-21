@@ -27,8 +27,7 @@ export class FormComponent implements OnInit {
       name: '',
       description: '',
       xpWhenKilled: '',
-      level: '',
-      maxHealth: ''
+      level: ''
     });
 
     const hasId = Boolean(this.activatedRoute.snapshot.params.id)

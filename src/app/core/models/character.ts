@@ -7,6 +7,5 @@ export interface Character {
   attack: number,
   defense: number,
   level: number,
-  xp: number,
-  maxHealth: number
+  xp: number
 }

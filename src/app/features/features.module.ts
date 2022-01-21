@@ -4,11 +4,8 @@ import { CommonModule } from '@angular/common';
 import { FeaturesRoutingModule } from './features-routing.module';
 import { AnimalModule } from './animal/animal.module';
 import { CharacterModule } from './character/character.module';
-import { CharacterSpriteModule } from './character-sprite/character-sprite.module';
-import { DialogueModule } from './dialogue/dialogue.module';
 import { EnemyModule } from './enemy/enemy.module';
 import { NpcModule } from './npc/npc.module';
-import { UserModule } from './user/user.module';
 
 
 @NgModule({
@@ -18,12 +15,9 @@ import { UserModule } from './user/user.module';
     FeaturesRoutingModule,
     AnimalModule,
     CharacterModule,
-    CharacterSpriteModule,
-    DialogueModule,
     EnemyModule,
-    NpcModule,
-    UserModule
+    NpcModule
   ],
-  exports: [AnimalModule, CharacterModule, CharacterSpriteModule, DialogueModule, EnemyModule, NpcModule]
+  exports: [AnimalModule, CharacterModule, EnemyModule, NpcModule]
 })
 export class FeaturesModule { }

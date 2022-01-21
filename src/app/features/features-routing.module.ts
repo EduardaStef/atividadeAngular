@@ -23,18 +23,6 @@ const routes: Routes = [
     import('./animal/animal.module').then((m) => m.AnimalModule),
   },
   {
-    path: 'characterSprite',
-    canActivate: [PermissionGuard],
-    loadChildren:async () =>
-    import('./character-sprite/character-sprite.module').then((m) => m.CharacterSpriteModule),
-  },
-  {
-    path: 'dialogue',
-    canActivate: [PermissionGuard],
-    loadChildren:async () =>
-    import('./dialogue/dialogue.module').then((m) => m.DialogueModule),
-  },
-  {
     path: 'enemy',
     canActivate: [PermissionGuard],
     loadChildren:async () =>
@@ -45,12 +33,6 @@ const routes: Routes = [
     canActivate: [PermissionGuard],
     loadChildren:async () =>
     import('./npc/npc.module').then((m) => m.NpcModule),
-  },
-  {
-    path: 'user',
-    canActivate: [PermissionGuard],
-    loadChildren:async () =>
-    import('./user/user.module').then((m) => m.UserModule),
   },
   {
     path: '**',

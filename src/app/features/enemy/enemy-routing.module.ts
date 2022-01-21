@@ -38,8 +38,15 @@ const routes: Routes = [
     component: FormComponent,
     resolve: {
       entities: EnemyDataResolver,
-    },
-  }
+    }
+  },
+    {
+      path: ':id',
+      component: FormComponent,
+      resolve: {
+        entities: EnemyDataResolver,
+      },
+    }
 ];
 
 @NgModule({

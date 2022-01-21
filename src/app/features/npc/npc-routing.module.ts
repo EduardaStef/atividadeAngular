@@ -40,6 +40,13 @@ const routes: Routes = [
     resolve: {
       entities: NpcDataResolver,
     },
+  },
+  {
+    path: ':id',
+    component: FormComponent,
+    resolve: {
+      entities: NpcDataResolver,
+    },
   }
 ];
 

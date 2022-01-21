@@ -5,7 +5,5 @@ export interface Animal{
   xpWhenKilled: number,
   attack: number,
   defense: number,
-  health: number,
-  paceful: boolean,
-  maxHealth: number
+  health: number
 }

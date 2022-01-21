@@ -26,9 +26,7 @@ export class FormComponent implements OnInit {
       xpWhenKilled: '',
       attack: '',
       defense: '',
-      health: '',
-      paceful: '',
-      maxHealth: ''
+      health: ''
     });
 
     const hasId = Boolean(this.activatedRoute.snapshot.params.id)

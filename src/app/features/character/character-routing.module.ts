@@ -39,6 +39,13 @@ const routes: Routes = [
     resolve : {
       entities : CharacterDataResolver
     }
+  },
+  {
+    path: ':id',
+    component: FormComponent,
+    resolve: {
+      entities: CharacterDataResolver,
+    },
   }
 ];
 

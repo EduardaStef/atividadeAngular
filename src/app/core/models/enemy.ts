@@ -6,6 +6,5 @@ export interface Enemy{
   name: string,
   description: string,
   xpWhenKilled: number,
-  level: number,
-  maxHealth: number
+  level: number
 }

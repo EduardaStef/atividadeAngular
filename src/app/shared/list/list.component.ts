@@ -13,6 +13,9 @@ export class ListComponent implements OnInit {
   @Output()
   deleteEntity = new EventEmitter();
 
+  @Output()
+  editEntity = new EventEmitter();
+
   entities: any[];
   keys: string[];
   inputValue: string;
@@ -31,7 +34,7 @@ export class ListComponent implements OnInit {
     this.router.navigate(['add'], { relativeTo: this.activatedRoute });
   }
 
-  editEntity(id: number): void {
+  onEditEntity(id: number): void {
     this.router.navigate([id], { relativeTo: this.activatedRoute });
   }
 

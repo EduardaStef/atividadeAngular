@@ -18,18 +18,8 @@ export class AnimalsService {
     return this.http.get<Animal>(`${this.baseUrl}/${id}`)
   }
 
-  all(queryParams?: { query?: string; limit?: number }): Observable<Animal[]> {
-    let params = {};
-
-    if (queryParams) {
-      const { query, limit } = queryParams;
-
-      params = query ? { q: query } : {};
-      params = limit ? { ...params, ...{ _limit: limit } } : params;
-    }
-
-    return this.http.get<Animal[]>(this.baseUrl, { params });
-
+  all() {
+    return this.http.get<Animal[]>(this.baseUrl);
   }
 
 

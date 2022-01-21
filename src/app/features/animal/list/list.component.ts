@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Animal } from 'src/app/core/models/animal';
 import { AnimalsService } from 'src/app/core/services/animals/animals.service';
 
@@ -9,10 +10,10 @@ import { AnimalsService } from 'src/app/core/services/animals/animals.service';
 })
 export class ListComponent implements OnInit {
   animals: Animal[] = [];
-  headers: string[] = ['Id', 'Specie', 'Level', 'XpWhenKilled', "Attack", "Defense", "Health", "Paceful?", "Max Health", "Sprites", "Actions"];
+  headers: string[] = ['Id', 'Specie', 'Level', 'XpWhenKilled', "Attack", "Defense", "Health", "Actions"];
 
 
-    constructor(private animalsService: AnimalsService) { }
+    constructor(private animalsService: AnimalsService, private router: Router, private activatedRoute: ActivatedRoute) { }
 
     ngOnInit(): void {}
 
@@ -20,6 +21,10 @@ export class ListComponent implements OnInit {
       this.animalsService.delete(event.id).subscribe(() => {
         this.animalsService.all().subscribe(event.callback);
     });
+  }
+
+  editAnimal(id: number) {
+    this.router.navigate([id], { relativeTo: this.activatedRoute });
   }
 
   }

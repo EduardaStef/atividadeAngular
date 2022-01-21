@@ -26,8 +26,7 @@ formTypeLabel: string;
       attack: '',
       defense: '',
       level: '',
-      xp: '',
-      maxHealth: ''
+      xp: ''
     });
 
     const hasId = Boolean(this.activatedRoute.snapshot.params.id)
