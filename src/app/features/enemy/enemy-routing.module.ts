@@ -34,7 +34,7 @@ const routes: Routes = [
     },
   },
   {
-    path: 'form',
+    path: 'add',
     component: FormComponent,
     resolve: {
       entities: EnemyDataResolver,

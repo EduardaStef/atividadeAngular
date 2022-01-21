@@ -22,7 +22,6 @@ export class AnimalsService {
     return this.http.get<Animal[]>(this.baseUrl);
   }
 
-
   upsert(animal: Animal) {
       if(animal.id){
         return this.http.patch(`${this.baseUrl}/${animal.id}`, animal);

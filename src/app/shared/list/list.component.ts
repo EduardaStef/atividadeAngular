@@ -13,8 +13,6 @@ export class ListComponent implements OnInit {
   @Output()
   deleteEntity = new EventEmitter();
 
-  @Output()
-  editEntity = new EventEmitter();
 
   entities: any[];
   keys: string[];
@@ -30,13 +28,10 @@ export class ListComponent implements OnInit {
     this.keys = Object.keys(this.entities[0]);
   }
 
-  goToAdd(): void {
-    this.router.navigate(['add'], { relativeTo: this.activatedRoute });
-  }
 
-  onEditEntity(id: number): void {
-    this.router.navigate([id], { relativeTo: this.activatedRoute });
-  }
+ // editEntity(id: number): void {
+  //  this.router.navigate([id], { relativeTo: this.activatedRoute });
+  //}
 
   onDeleteEntity(id: number): void {
     const obj = {
@@ -48,6 +43,10 @@ export class ListComponent implements OnInit {
 
   private setEntities(entities) {
     this.entities = entities
+  }
+
+  goToAdd(): void {
+    this.router.navigate(['add'], { relativeTo: this.activatedRoute });
   }
 
 }

@@ -6,6 +6,7 @@ import { FeaturesModule } from './features/features.module';
 import { CoreModule } from './core/core.module';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     FeaturesModule,
     HttpClientModule,
     RouterModule.forRoot([]),
-    CoreModule
+    CoreModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

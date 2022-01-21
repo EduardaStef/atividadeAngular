@@ -1,23 +1,26 @@
-<div>
-  <button (click)="goToAdd()">Add</button>
-</div>
+<div class="conteudo">
 
-
-<table>
+<table >
   <tr>
-    <th *ngFor="let header of headers">
+    <th class="separa" *ngFor="let header of headers">
       {{ header }}
     </th>
   </tr>
 
   <tr *ngFor="let entity of entities">
-    <td *ngFor="let key of keys">{{ entity[key] }}</td>
+    <td  *ngFor="let key of keys">{{ entity[key] }}</td>
     <td>
-      <button (click)="editEntity(entity.id)">Edit</button>
-      <button (click)="onDeleteEntity(entity.id)">Delete</button>
+      <button  mat-raised-button  color="primary"  (click)="onDeleteEntity(entity.id)">Deletar</button>
     </td>
   </tr>
 </table>
+
+<br />
+
+<div>
+  <button  mat-raised-button  color="primary"   (click)="goToAdd()">Adicionar</button>
+</div>
+</div>
 
 
 

@@ -20,7 +20,7 @@ export class FormComponent implements OnInit {
 
   ngOnInit(): void {
     this.keys = Object.keys(this.formEntity.value).filter(
-    (key) => key !== 'id'
+      (key) => key !== 'id'
     );
 
     this.activatedRoute.data.subscribe((value) => {

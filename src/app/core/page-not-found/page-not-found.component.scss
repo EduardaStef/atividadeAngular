@@ -2,6 +2,7 @@
 
 .conteudo {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .conteudo-principal {
@@ -17,10 +18,13 @@
   gap: 30px;
 }
 
-.conteudoPrincipal-titulo {
-  font-family: 'Sarala', sans-serif;
-  font-weight: 400;
-  font-size: 39px;
+h1 {
+  text-align: center;
+  font-size: 100px;
+  color: rgb(255, 236, 213);
+  font-weight: 1000;
+  margin: 50px;
+  padding-bottom: 20px;
 }
 
 .conteudoPrincipal-subtitulo {

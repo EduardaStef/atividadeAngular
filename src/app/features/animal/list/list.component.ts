@@ -23,8 +23,5 @@ export class ListComponent implements OnInit {
     });
   }
 
-  editAnimal(id: number) {
-    this.router.navigate([id], { relativeTo: this.activatedRoute });
-  }
 
   }

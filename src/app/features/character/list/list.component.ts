@@ -24,8 +24,5 @@ export class ListComponent implements OnInit {
       });
     }
 
-    editCharacter(id: number) {
-      this.router.navigate([id], { relativeTo: this.activatedRoute });
-    }
 
     }

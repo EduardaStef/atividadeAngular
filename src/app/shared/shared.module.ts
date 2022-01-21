@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { FormComponent } from './form/form.component';
 import { ListComponent } from './list/list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+
 
 
 
@@ -11,7 +14,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatButtonModule,
+    MatInputModule
   ],
   exports: [ListComponent, FormComponent],
 })
