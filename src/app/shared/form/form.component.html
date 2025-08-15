@@ -1,0 +1,16 @@
+<div class="conteudo">
+
+<form [formGroup]="formEntity">
+  <div *ngFor="let value of keys">
+    <label [for]="value">{{ value }}:</label>
+    <br />
+    <input type='text' [formControlName]="value" [id]="value" />
+    <br />
+  </div>
+  <br />
+  <div>
+  <button  mat-raised-button  color= "primary" type="button" (click)="clickOnSubmit()">Submit</button>
+  <button  mat-raised-button  color= "primary" type="button" (click)="goBack()">Cancel</button>
+  </div>
+</form>
+</div>
